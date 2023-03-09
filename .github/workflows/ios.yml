@@ -43,6 +43,7 @@ jobs:
 
     - name: Update Pods
       run: |
+        xcode-select --install 
         gem update cocoapods xcodeproj
         cd ios && pod install && cd ..
 
